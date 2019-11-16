@@ -36,32 +36,6 @@ public class LoginController {
   
   return model;
  }
- 
- 
- //Online bookstore
- 
- @RequestMapping(value="/create", method=RequestMethod.GET)
- public ModelAndView catttty(){
-  ModelAndView model = new ModelAndView();
-  model.setViewName("home/catttty");
-  
-  return model;
- }
- 
- @RequestMapping(value="/check", method=RequestMethod.GET)
-
- public ModelAndView hurray(){
-  ModelAndView model = new ModelAndView();
-  
-  
-  model.setViewName("home/hurray");
-  
-  return model;
- }
- 
-//Online bookstore
- 
- 
  @RequestMapping(value="/logout", method=RequestMethod.GET)
  public String logoutPage(HttpServletRequest request, HttpServletResponse response){
   Authentication auth = SecurityContextHolder.getContext().getAuthentication();

@@ -6,8 +6,6 @@ com\jackrutorial\dao\UserDaoImpl.class
 com\jackrutorial\controller\LoginController.class
 com\jackrutorial\controller\HomeController.class
 com\jackrutorial\dao\LoginDao.class
-com\jackrutorial\dao\LoginDaoImpl$BookInfoMapper.class
-com\jackrutorial\service\BookServiceImpl.class
 com\jackrutorial\dao\LoginDaoImpl$UserInfoMapper.class
 com\jackrutorial\model\BookInfo.class
 com\jackrutorial\config\WebInitializer.class

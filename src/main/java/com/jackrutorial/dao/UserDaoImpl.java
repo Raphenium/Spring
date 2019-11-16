@@ -12,9 +12,6 @@ import org.springframework.stereotype.Repository;
 
 import com.jackrutorial.model.UserInfo;
 
-import com.jackrutorial.model.BookInfo;
-
-
 @Repository
 public class UserDaoImpl implements UserDao {
  
@@ -93,35 +90,4 @@ public class UserDaoImpl implements UserDao {
   return false;
  }
  
- 
- // BOOK STORE
- public void add1(String ISBN, String title) {
-	  String sql = "insert into books(ISBN, title) values(:ISBN, :title)";
-	  
-	 }
-
-	 public boolean bookExists(String ISBN) {
-	  String sql = "select * from books where ISBN = :ISBN";
-	  
-	  List<UserInfo> list1 = namedParameterJdbcTemplate
-			  .query(sql, getSqlParameterSource(ISBN, null), new UserMapper());
-	  
-	  if(list1.size() > 0){
-	   return true;
-	  }
-	  
-	  return false;
-	 }
-
-	public List<BookInfo> list1() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public BookInfo findBookByISBN(String ISBN) {
-		// TODO Auto-generated method stub
-		return null;
-	}
- 
-
 }

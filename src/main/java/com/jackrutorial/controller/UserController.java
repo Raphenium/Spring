@@ -10,7 +10,6 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.jackrutorial.form.UserForm;
-import com.jackrutorial.form.CreateForm;
 import com.jackrutorial.model.UserInfo;
 import com.jackrutorial.service.UserService;
 
@@ -70,26 +69,7 @@ BindingResult result, RedirectAttributes redirectAttributes){
   } else {
    userService.add(userForm.getUsername(), userForm.getPassword());
    redirectAttributes.addFlashAttribute("msg", "Your account has been created successfully!");
-   
    return "redirect:/login";
   }
  }
- 
- //Book Store
- @RequestMapping(value="/createbook", method=RequestMethod.POST)
- public String createbook(@ModelAttribute("createForm") CreateForm createForm, 
-BindingResult result, RedirectAttributes redirectAttributes){
-  
-  signupValidator.validate(createForm, result);
-  
-  if(result.hasErrors()){
-   return "/user/createForm";
-  } else {
-   redirectAttributes.addFlashAttribute("msg", "Your Book has been created successfully!");
-   
-   return "redirect:/createForm";
-  }
- }
- 
- 
 }
