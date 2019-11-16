@@ -18,10 +18,11 @@ The Project include a homepage where user can request for books.
 The project respond to user book request accordingly.
 
 
+
 WHAT I DIDNT DO
 
 I didnt have enough time to look through how to implement MongoDB with Spring so I used MySql which I am used to.
 
-No Much Design
+No much design.
 
 
