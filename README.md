@@ -19,7 +19,7 @@ The project respond to user book request accordingly.
 
 
 
-WHAT I DIDNT DO
+WHAT I DID NOT DO BECAUSE OF TIME CONSTRAINT 
 
 I didnt have enough time to look through how to implement MongoDB with Spring so I used MySql which I am used to.
 
